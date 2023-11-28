@@ -1,0 +1,49 @@
+body{
+    height: 1080px;
+    width: 100%;
+}
+.iniciar-sesion{
+    width: 76%;
+    height: 90%;
+    margin-left: 12%;
+    margin-top: 5%;
+    height: 100%;
+    text-align: center;
+}
+
+button{
+    float: left;
+}
+
+.centrar{
+    margin-left: 25%;
+}
+
+h1 {
+  padding-bottom: 20px;
+}
+
+p{
+    padding-top: 5px;
+}
+
+.contenedor-formulario{
+    position: relative;
+    float: left;
+    width: 35%;
+    height: 820px;
+    padding-bottom: 20px;
+}
+
+.Fondo-login{
+    float: left;
+    width: 65%;
+    height: 100%;
+    background-image: url(/assets/psicologos.jpg);
+    background-size: cover;
+}
+
+h3{
+    text-align: left;
+    font-size: 15px;
+}

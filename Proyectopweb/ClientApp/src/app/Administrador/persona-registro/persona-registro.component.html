@@ -1,0 +1,166 @@
+<body>
+
+  <div class="contenedor-formulario">
+    <div class="iniciar-sesion">
+
+      <div class="container">
+        <div class="row">
+
+          <h2>Psicotec</h2>
+
+          <form [formGroup]="formGroup">
+
+            <div class="form-group">
+              <input type="text" formControlName="nombreUsuario" placeholder="Nombre de Usuario" class="form-control"
+                [ngClass]="{'is-invalid':control.nombreUsuario.errors }" />
+              <div *ngIf=" control.nombreUsuario.errors" class="invalid-feedback">
+                <div *ngIf="control.nombreUsuario.errors.required">El usuario es requerido</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="text" formControlName="contrasena" placeholder="Contraseña" class="form-control"
+                [ngClass]="{ 'is-invalid':  control.contrasena.errors }" />
+              <div *ngIf=" control.contrasena.errors" class="invalid-feedback">
+                <div *ngIf="control.contrasena.errors.required">La contraseña es requerida</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <select class="form-select" formControlName="tipoDocumento"
+                [ngClass]="{ 'is-invalid':  control.tipoDocumento.errors }">
+                <option selected disabled>Tipo de Documento</option>
+                <option value="cedula">Cedula de ciudadania</option>
+                <option value="registro">Registro civil</option>
+                <option value="tarjeta">Tarjeta de identidad</option>
+                <option value="extrangero">Documento extrangero</option>
+              </select>
+              <div *ngIf=" control.tipoDocumento.errors" class="invalid-feedback">
+                <div *ngIf="control.tipoDocumento.errors.required">El tipo de documento es requerido</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="text" formControlName="identificacion" placeholder="Identificacion"
+                [ngClass]="{ 'is-invalid':  control.identificacion.errors }" class="form-control" />
+              <div *ngIf=" control.identificacion.errors" class="invalid-feedback">
+                <div *ngIf="control.identificacion.errors.required">La identificacion es requerida</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="text" formControlName="nombre" placeholder="Nombre"
+                [ngClass]="{ 'is-invalid':  control.nombre.errors }" class="form-control" />
+              <div *ngIf=" control.nombre.errors" class="invalid-feedback">
+                <div *ngIf="control.nombre.errors.required">El nombre es requerido</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="text" formControlName="apellido" placeholder="Apellido"
+                [ngClass]="{ 'is-invalid':  control.apellido.errors }" class="form-control" />
+              <div *ngIf=" control.apellido.errors" class="invalid-feedback">
+                <div *ngIf="control.apellido.errors.required">El apellido es requerido</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <select class="form-select" formControlName="sexo" [ngClass]="{ 'is-invalid':  control.sexo.errors }">
+                <option selected disabled>Sexo</option>
+                <option value="cedula">Masculino</option>
+                <option value="registro">Femenino</option>
+              </select>
+              <div *ngIf=" control.sexo.errors" class="invalid-feedback">
+                <div *ngIf="control.sexo.errors.required">El sexo es requerido</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <h3>Fecha de Nacimiento</h3>
+              <input type="date" formControlName="fechaNacimiento"
+                [ngClass]="{ 'is-invalid':  control.fechaNacimiento.errors }" class="form-control" />
+              <div *ngIf=" control.fechaNacimiento.errors" class="invalid-feedback">
+                <div *ngIf="control.fechaNacimiento.errors.required">La fecha de nacimiento es requerida</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+
+              <input type="text" formControlName="telefono" placeholder=" Telefono"
+                [ngClass]="{ 'is-invalid':  control.telefono.errors }" class="form-control" />
+              <div *ngIf=" control.telefono.errors" class="invalid-feedback">
+                <div *ngIf="control.telefono.errors.required">El telefono es requerido</div>
+              </div>
+            </div>
+            <div class="form-group">
+
+              <input type="text" formControlName="direccion" placeholder=" Direccion"
+                [ngClass]="{ 'is-invalid':  control.direccion.errors }" class="form-control" />
+              <div *ngIf=" control.direccion.errors" class="invalid-feedback">
+                <div *ngIf="control.direccion.errors.required">La direccion es requerida</div>
+              </div>
+            </div>
+            <div class="form-group">
+
+              <input type="text" formControlName="correo" placeholder=" Correo"
+                [ngClass]="{ 'is-invalid':  control.correo.errors }" class="form-control" />
+              <div *ngIf=" control.correo.errors" class="invalid-feedback">
+                <div *ngIf="control.correo.errors.required">El correo es requerido</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <select type="text" formControlName="eps" placeholder=" Nombre Eps"
+                [ngClass]="{ 'is-invalid':  control.eps.errors }" class="form-control">
+                <option>Salud Colmena E.P.S. S.A.</option>
+                <option>Salud Total S.A. E.P.S.</option>
+                <option>Cafesalud E.P.S. S.A.</option>
+                <option>E.P.S. Sanitas S.A.</option>
+                <option>E.P.S. Unimec - Liquidación</option>
+                <option>Compensar E.P.S. </option>
+                <option>EPS Prog. Comfenalco Antioquia</option>
+                <option>SuSalud EPS</option>
+                <option>Colseguros E.P.S.</option>
+                <option>Comfenalco Valle E.P.S.</option>
+                <option>E.P.S. Saludcoop</option>
+                <option>Humana Vivir S.A. E.P.S.</option>
+                <option>EPS Servicios Medicos Colpatria</option>
+                <option>Coomeva E.P.S.</option>
+                <option>E.P.S. Famisanar LTDA. CAFAM-COLSUBSIDIO</option>
+                <option>E.P.S Servicio Occidental de Salud S.A.-EPS-S.O.S.</option>
+                <option>Solsalud S.A. EPS.</option>
+                <option>SALUDVIDA S.A. EPS</option>
+                <option>SALUDCOLOMBIA EPS S.A.</option>
+                <option>RED SALUD ATENCION HUMANA EPS S.A.</option>
+                <option>CajaCopi EPS</option>
+              </select>
+
+              <div *ngIf=" control.eps.errors" class="invalid-feedback">
+                <div *ngIf="control.eps.errors.required">La eps es requerida</div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="text-center centrar">
+          <button class="btn btn-danger mr-1" (click)="Cancelar()">
+            Cancelar
+          </button>
+        </div>
+
+        <div class="text-center">
+          <button class="btn btn-primary mr-1" (click)=" onSubmit()" [disabled]="formGroup.invalid">Registrate</button>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+  <div class="Fondo-login">
+
+  </div>
+
+
+</body>

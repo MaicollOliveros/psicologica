@@ -1,0 +1,49 @@
+.lado-derecho{
+    float: left;
+    width: 45%;
+    min-height: 250px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.lado-izquierdo{
+    float: left;
+    width: 45%;
+    min-height: 250px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+input{
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.lado-derecho2{
+    float: left;
+    width: 45%;
+    min-height: 160px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.lado-izquierdo2{
+    float: left;
+    width: 45%;
+    min-height: 150px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+p{
+    margin-left: 2.5%;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+select{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

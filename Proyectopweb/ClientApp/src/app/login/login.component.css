@@ -1,0 +1,36 @@
+body{
+    height: 650px;
+    width: 100%;
+}
+.iniciar-sesion{
+    width: 76%;
+    height: 50%;
+    margin-left: 12%;
+    margin-top: 40%;
+    text-align: center;
+}
+.form-label{
+    font-weight: 700;
+}
+
+h1{
+    padding-bottom: 20px;
+}
+
+p{
+    padding-top: 20px;
+}
+
+.contenedor-formulario{
+    float: left;
+    width: 35%;
+    height: 100%;
+}
+
+.Fondo-login{
+    float: left;
+    width: 65%;
+    height: 100%;
+    background-image: url(/assets/OIP.jpg);
+    background-size: cover;
+}
